@@ -1,0 +1,29 @@
+{
+  "name": "abstract-ui-basic",
+  "version": "0.1.0",
+  "description": "abstract-ui basic handlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5alidz/abstract-ui-basic.git"
+  },
+  "keywords": [
+    "abstract-ui",
+    "Box",
+    "InnerHtml",
+    "Promise",
+    "Reducer",
+    "Router",
+    "Side-effect",
+    "State"
+  ],
+  "author": "5alidz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5alidz/abstract-ui-basic/issues"
+  },
+  "homepage": "https://github.com/5alidz/abstract-ui-basic#readme"
+}
