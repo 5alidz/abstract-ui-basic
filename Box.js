@@ -22,7 +22,7 @@ export default function box_handler(vNode, { to_dom }) {
     type: new_type,
     props: new_style ? {style: new_style.trim()} : {},
     children: vNode.children,
-    $type: Symbol.for('nano_spa.component')
+    $type: Symbol.for('abstract-ui.component')
   })
   return dom_node
 }

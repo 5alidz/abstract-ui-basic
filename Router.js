@@ -31,7 +31,7 @@ const init_render_page = (props, to_dom, root, on) => {
       const dom_node = to_dom(v_node)
       g.routes[route] = dom_node
       clear_root(root, dom_node)
-      if(v_node.$type !== Symbol.for('nano_spa.handler')) {
+      if(v_node.$type !== Symbol.for('abstract-ui.handler')) {
         if(g.routes[g.CURRENT]) {g.on_mount(g.routes[g.CURRENT], g.CURRENT)}
       } else {
         on(v_node, (resolved_node) => {
