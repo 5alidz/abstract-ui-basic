@@ -1,15 +1,15 @@
 module.exports = {
-  type: {
+  props: {
     type: {
-      enum: ['idle', 'animation', /^timer-\d+$/, 'timer', 'sync']
+      enum: ['idle', 'animation', /^timer-\d+$/, 'timer', 'sync'],
+      default: 'sync'
     },
-    default: 'sync'
-  },
-  callback: {
-    required: true,
-    type: 'function'
-  },
-  disabled: {
-    type: 'boolean'
+    callback: {
+      required: true,
+      type_of: 'function'
+    },
+    disabled: {
+      type_of: 'boolean'
+    }
   }
 }

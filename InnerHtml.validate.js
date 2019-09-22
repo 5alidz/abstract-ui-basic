@@ -1,3 +1,1 @@
-module.exports = {
-  '*children': {mode: 'loose'}
-}
+module.exports = {}
