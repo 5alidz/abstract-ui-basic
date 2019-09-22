@@ -1,6 +1,6 @@
 {
   "name": "abstract-ui-basic",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "abstract-ui basic handlers",
   "main": "index.js",
   "scripts": {
