@@ -46,6 +46,8 @@ const init_render_page = (props, to_dom, root, on) => {
         if(g.routes[g.CURRENT]) {g.on_mount(g.routes[g.CURRENT], g.CURRENT)}
         return
       } else {
+        const spinner_node = to_dom(g.spinner())
+        clear_root(g.root, spinner_node)
         props.dir(resolve_name(route)).then(render_module).catch(handle_err)
       }
     }
@@ -64,6 +66,8 @@ export default function router_handler(vNode, {to_dom, on}) {
   g.render = render
   g.on_mount = vNode.props.on_mount || g.on_mount
   g.on_unmount = vNode.props.on_unmount || g.on_unmount
+  g.spinner = vNode.props.spinner
+  g.dynamic = vNode.props.dynamic
 
   g.CURRENT = window.location.pathname
   g.render(g.CURRENT)
